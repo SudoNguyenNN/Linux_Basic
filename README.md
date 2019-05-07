@@ -17,4 +17,7 @@ Hiểu đơn giản thì kernel là trái tim của một hệ điều hành. Li
 <img src="http://www.ibm.com/developerworks/linux/library/l-linux-kernel/figure3.jpg">
 
 - Nhân Kerned của Linux gồm 5 tiểu hệ thống chính:
-   - 1.Bộ phận phân tích tiến trình (Process Scheduler-SCHED):
+   - 1.Bộ phân thời tích tiến trình (Process Scheduler-SCHED):Là bộ phận trung tâm của hệ điều hành, chịu trách nhiệm chia sẻ thời gian sử dụng CPU cho các process.
+   - SCHED chia làm 4 module:
+   
+   
