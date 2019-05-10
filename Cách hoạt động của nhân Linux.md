@@ -31,7 +31,7 @@ Hệ điều hành Linux được cài trên ổ cứng thì BIOS sẽ tìm ki�
 
 <img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-BIOS.jpg">
 
-#Bước 2: Master Boot Record (MBR).
+# Bước 2: Master Boot Record (MBR).
  
  
 
