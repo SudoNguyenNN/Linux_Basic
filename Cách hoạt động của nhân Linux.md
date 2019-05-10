@@ -32,6 +32,8 @@ Hệ điều hành Linux được cài trên ổ cứng thì BIOS sẽ tìm ki�
 <img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-BIOS.jpg">
 
 # Bước 2: Master Boot Record (MBR).
+
+Sau khi BIOS xác định được thiết bị lưu trữ thì BIOS sẽ đọc trong MBR hoặc phân vùng EFI của thiết bị này để
  
  
 
