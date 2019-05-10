@@ -55,6 +55,12 @@ Trình khởi động giai đoạn hai nằm trong /boot. Màng hiển thị cho
 
 # Bước 4: Linux kernel được nạp và khởi chạy
 
+Boot loader nạp một phiên bản dạng nén của linux kernel. Nó tự giải nén và tự cài đặt lên bộ nhớ hệ thống nơi mà nó sẽ ở đó cho tới khi tắt máy.
+
+<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-kernel-vao-file-sbin.jpg">
+
+Sau khi cho
+
 
 
  
