@@ -59,7 +59,21 @@ Boot loader nạp một phiên bản dạng nén của linux kernel. Nó tự gi
 
 <img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-kernel-vao-file-sbin.jpg">
 
-Sau khi cho
+Sau khi chọn kernel trong file cấu hình của boot loader, hệ thống sex tuej nạp chương trình init trong thư mục /sbin.
+
+<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-kernel.png">
+
+# Bước 5: Các script trong INITRD thực thi.
+
+INITRD cung cấp một giải pháp: là một tập các chương trình sẽ được thực thi khi kernel vừa mới được khưởi chạy. Các chương trình này sẽ dò quét phần cứng của hệ thống và xác định xem kernel cần được hỗ trợ thêm những gì để có thể quản lý được các phần cứng đó. Chương trình INITRD có thể nạp thêm vào kernel các module bổ trợi. Khi chương trình INITRD kết thúc quá trình khởi động Linux sẽ tiếp diến.
+
+Hệ thống thống hình ảnh tập tin initramfs chứa các chương trình và tệp nhị phân thực hiện hiện các hành động cần thiết để gắn kết hệ thống tập tin thích hợp, cung cấp chức năng hạt nhân cho hệ thống tệp và các trình điều khiển thiết bị cần thiết cho bộ điều khiển lưu trữ hàng loạt với cơ sở được gọi là udev ( cho thiết bị người dùng ). thiết bị nào có mặt, định vị các trình điều khiển thiết bị àm chúng cần để hoạt động chính xác và tải chúng. Sau khi hệ thống tập tin gốc đã được tìm thấy, nó được kiểm tra lỗi và được gắn kết.
+
+<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-dia-ram-Initial.png">
+
+# Bước 6: Chương trình init thực thi.
+
+
 
 
 
