@@ -1,5 +1,5 @@
 ## Toàn bộ quá trình khởi động:
-<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-khoi-dong-linux.jpg">
+<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-khoi-dong-linux.png">
 
 # Quá trình diễn ra như sau:
  **Bước 1 BIOS.**
@@ -29,7 +29,7 @@ Quá trình POST kết thúc thành công, BIOS sẽ tìm kiếm và khởi ch�
 
 Hệ điều hành Linux được cài trên ổ cứng thì BIOS sẽ tìm kiếm đến MBR(Master Boot Record).
 
-<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-BIOS.jpg">
+<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-BIOS.png">
 
 # Bước 2: Master Boot Record (MBR).
 
@@ -37,7 +37,7 @@ Sau khi BIOS xác định được thiết bị lưu trữ thì BIOS sẽ đọc
 
 Đến giai đoạn này, máy tính sẽ máy tính sẽ không truy cập vào phương tiện lưu trữ nào. Thông tin về ngày tháng, thời gian các thiết bị ngoại vi quan trọng nhất được nạp từ CMOS.
 
-<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-Master-Boot-Record.jpg">
+<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-Master-Boot-Record.png">
 
 # Bước 3: Boot loader
 
@@ -51,15 +51,15 @@ Với hệ thống sử dụng phương pháp EFI/ UEFI, phần mềm UEFI đọ
 
 Trình khởi động giai đoạn hai nằm trong /boot. Màng hiển thị cho chúng ta chọn hệ điều hành để khởi động. Tiếp đến bộ nạp khởi động sẽ tải hệ điều hành vào RAM và chuyển quyền kiểm soát cho RAM.
 
-<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-Boot-Loader-chi-tiet.jpg">
+<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-Boot-Loader-chi-tiet.png">
 
 # Bước 4: Linux kernel được nạp và khởi chạy
 
 Boot loader nạp một phiên bản dạng nén của linux kernel. Nó tự giải nén và tự cài đặt lên bộ nhớ hệ thống nơi mà nó sẽ ở đó cho tới khi tắt máy.
 
-<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-kernel-vao-file-sbin.jpg">
+<img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-kernel-vao-file-sbin.png">
 
-Sau khi chọn kernel trong file cấu hình của boot loader, hệ thống sex tuej nạp chương trình init trong thư mục /sbin.
+Sau khi chọn kernel trong file cấu hình của boot loader, hệ thống sẽ tự nạp chương trình init trong thư mục /sbin.
 
 <img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-kernel.png">
 
@@ -72,6 +72,38 @@ Hệ thống thống hình ảnh tập tin initramfs chứa các chương trình
 <img src="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-dia-ram-Initial.png">
 
 # Bước 6: Chương trình init thực thi.
+
+Kernel được khởi chạy xong, nó sẽ duy nhất một chương trình tên là init.
+
+Tiến trình này có ID=1 Init là cha của tất cả các tiến trình khác mà có tên trên hệ thống Linux.
+
+` Lưu Ý : Không được sử dụng lệnh kill đối với init này.`
+
+Init xử lý việc ngắn và xoay vòng vào hệ thống tập tin gốc thực sự cuối cùng.
+
+Trong hệ điều hành Linux có hai loại init phổ biến:
+- Loại thứ nhất dựa trwn Unix System V.
+- Loại thứ hai dựa trên Systemd.
+
+# Bước 7: Đăng nhập với giao diện đồ họa.
+
+**Đăng nhập text mode**
+
+Gần cuối quá trình khởi động, init sẽ bắt đầu một chế độ đăng nhập text mode. Nhập tên người dùng và mật khẩu của bạn để đăng nhập và xuất hiện các dấu nhắc lệnh shell.
+
+<src img="https://blogd.net/linux/qua-trinh-khoi-dong-he-dieu-hanh-linux/img/qua-trinh-boot-linux-giai-doan-Text-Mode-Login.png">
+ 
+ Subsystem cuối cùng được init khởi động lên là X Window, là một hệ thống giao diện đồ họa người dùng của Linux.
+ 
+ Cách truy cập các terminal qua phím ALT
+ - Các terminal chạy các lệnh shell có thể try cập bằng ALT + với một phím chức năng.
+ - Trong môi trường đồ họa, việc chuyển sang bàn phím điều khiển văn bản yêu cầu nhấn tổ hợp phím CTRL+ALT+ phím chức năng thích hợp ( với F7 hoặc F1 dẫn đến GUI).
+ 
+ # Bước 8: Đăng nhập thành công vào hệ thống.
+ 
+ Shell lệnh mậc định là bash (GNU bourne Again Shell), nhưng có một số lệnh nâng cao khác có sẵn . Nó đã sẵn sàng chấp nhận các lệnh, bạn gõ leenhjvaf nhấp Enter, lệnh được thực hiện.
+ 
+
 
 
 
