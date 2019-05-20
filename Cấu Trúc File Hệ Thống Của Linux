@@ -1,5 +1,0 @@
-Hệ điều hành Linux coi tất cả đều là các tệp tin (file) thậm chí cả các thiết bị cũng như ổ đĩa. Nó quản lý tất cả trên một "hệ thống tập tin" duy nhất, bắt đầu ở một thư mục gốc là một thư mục "root" và đây là thư mục ở mức cao nhất. Cấu trúc cơ bản của hệ thống tệp tin này được mô tả như hình bên dưới:
-
-<img src="https://imgur.com/YZxCIS5">
-
-** Bạn dùng câu lệnh ls để liệt kê các thư mục và tệp tin nằm trong root như sau: $ls/#/ đại diện cho thư mục root.*8
