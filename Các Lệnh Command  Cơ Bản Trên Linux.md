@@ -89,4 +89,93 @@ fg : Ngưng chạy nền (chuyển sang foreground) với công việc gần nh�
 fg n : Ngừng chạy nền với công việc n
 
 ## 4.Nén 
+tar cf file.tar files : Tạo một tập tar có tên file.tar chứa các tập tin khác
 
+tar czf file.tar.gz files : Tạo một tập tar có nén bằng Gzip
+
+tar xzf file.tar.gz : Giải nén mội tập tar bằng Gzip
+
+tar cjf file.tar.bz2 : Tạo một tập tar có nén bằng Bzip2
+
+tar xjf file.tar.bz2 : Giải nén một tập tar bằng Bzip2
+
+gzip file : nén file và đổi tên thành file.gz
+
+gzip -d file.gz : Giải nén file.gz
+
+## 5. Quyền sử dụng tập tin 
+ 
+chmod octal file : Thay đổi quyền sử dụng của tập tin file thành octal . Mỗi chữ số tương ứng với từng  tài khoản có được bằng cách công các số khác nhau:
+ - 4 : đọc (r)
+ - 2 : ghi (w)
+ - 1 : thực thi (x)
+ 
+Ví dụ : 
+
+chmod 777 : tất cả đều có đủ 3 quyền
+
+chmod 755 : rwx cho người sở hữu, rx cho nhóm sở hữu và các tài khoản khác.
+
+Xem man chmod để  biết thêm chi tiết.
+
+## 6. Mạng
+
+ping host : gửi lệnh ping đến máy host và hiện kết quả
+
+whois domain : kiểm tra  thông tin whois của tên miền domain
+
+dig  -x host : Tìm ngược tên miền của máy host 
+
+wget file : tải tin file
+
+wget -c file : tiếp tục tải tập tin đang mở.
+
+## 7. Cài đặt
+
+Cài đặt mã nguồn:
+
+./configure
+
+make
+
+make install
+
+dpkg -i pkg.deb : cài gói phần mền (Debian)
+
+rpm - Uvh pkg.rpm : Cài gói phần mềm (RPM)
+
+## 8. SHH
+
+shh user@host : kết nối đến máy host với tài khoản user
+
+shh -p port user@host : kết nối đến máy host thông qua  cổng port với tài khoản user
+
+shh-copy-id user@host : Thêm khóa công cộng của tài khoản user vào máy host để thiết lập đăng nhập không cần mật khẩu ( đăng nhập có  khóa)
+
+## .9 Tìm Kiếm
+
+grep pattern file : tìm mẫu lặp pattern trong các tập tin files 
+
+grep -r pattern dir : Tìm mẫu lặp pattern trong các thư mục dir và tất cả các thư mục con (recursive)
+
+command | grep pattern : Tìm mẫu lặp pattern trong dầu ra của lệnh command
+
+## 10. Phím Tắt 
+
+ctrl+c : dừng hoàn toàn lệnh đang chạy
+
+ctrl+z : tạm dừng lệnh hiện tại , tiếp tục chạy nền bằng lệnh *bg* hoặc chạy chính với lệnh *fg*
+
+ctrl+d : thoát khỏi phiên làm việc hiện tại , giống với exit
+
+ctrl+w : xóa một từ trong dòng hiện tại
+
+ctrl+u : xóa cả dòng
+
+ctrl+r : hiện danh sách các lệnh gần đây
+
+!! : lặp lại lệnh gần đây 
+
+exit : thoát khỏi phiên bản làm việc hiện tại
+
+*: phải cựu kỳ cẩn trọng khi dùng.
