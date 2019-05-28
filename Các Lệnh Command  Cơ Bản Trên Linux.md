@@ -179,3 +179,7 @@ ctrl+r : hiện danh sách các lệnh gần đây
 exit : thoát khỏi phiên bản làm việc hiện tại
 
 *: phải cựu kỳ cẩn trọng khi dùng.
+
+## 11.Kích hoạt tài khoản root trong Linux
+
+sudo -i :để đăng nhập vào root 
