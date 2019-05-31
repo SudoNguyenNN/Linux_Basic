@@ -179,12 +179,13 @@ Ví Dụ :Đổi tên tập tin test1.txt trong /root thành test2.txt:
  - `wq` : Lưu và thoát khỏi tập tin.
  
  Các câu lệnh và tác dụng trong chế độ dòng lệnh của trình soạn thảo vi:
+ 
  | Câu Lệnh | Tác Dụng |
  | ------------ | ----------- |
  | ^ hoặc 0 | Di chuyển con trỏ đến vị trí bắt đầu của dòng lệnh hiện tại |
  | $ | Di chuyển con trỏ đến vị trí kết thúc của dòng hiện tại. |
  | i,a | Chèn văn bản ngay trước/sau vị trí con trỏ |
- | 
+ 
  
  
  
