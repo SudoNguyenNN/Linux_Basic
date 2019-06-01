@@ -291,11 +291,61 @@ Ví Dụ :Đổi tên tập tin test1.txt trong /root thành test2.txt:
  `find / -newer myfile`
  
 ##### 12.3 Tìm theo Owner và Permission
-
-
  
+Chúng ta có thể tìm theo user hay group owner bằng `-user` và `-group`.
+
+**Tìm các file mà user " test" sở hữu:
+
+`find /-user test`
+
+Hoặc các file mà group "newgroup" sở hữu:
+
+` find / - group newgroup`
+
+**Chúng ta cũng tìm được theo permission của file, bằng -perm.
+
+Tìm những file có permission 664:
+
+` find / -perm -664`
+
+Hoặc những file có permission ít nhất 664, nghĩa là gồm cả các file có permission là 744:
+
+`find / -perm -664`
+
+##### 12.4 Kết hợp find và command khác 
+
+Chúng ta còn có thể kết hợp ` find` và các command khác để sử lý những file vừa tìn được với `-exec`
+
+`find find_parameters -exec command_and_params {} \;
+
+Tìm các file có permission là 664 và chmod sang 755:
+
+`find/ -type f -perm 644 - print -exec chmod 755 {} \;`
+
+Tìm một file test.txt và xóa nó.
+
+`find .-type f -name "test.txt" -exec rm -f {} \;`
+  
+Hoặc xóa các file có đuôi .py ở hiện tại .
+
+`find. -type f -name "*.py" -exec rm -f {} \;`
+
+## 13. Lệnh nén và giải nén tập tin thư mục 
+
+Tong hệ thống Linux tồn tại một số dạng nén cơ bản như : zip ,... Dưới đây là một vài ví dụ về cách giải nén và nén với định dạng đó.
+
+ Nén và giải nén tập tin có đuôi là .gz
+
+`gzip [đường dẫn ]`
+
+Ví Dụ : Nén tập tin test.txt trong thư mục /usr/bin thành test.txt.gz:
+
+`gzip /usr/bin/test.txt                                                                                    gunzip [đường dẫn]`
+
+Ví Dụ 2: Giải nén tập tin test.txt.gz trong thư mục /usr/bin:
+
+` gunzip /usr/bin/test.txt`
+
+## 14. Lệnh locate
 
 
-  
-  
-  
