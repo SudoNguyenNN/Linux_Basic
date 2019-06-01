@@ -185,6 +185,15 @@ Ví Dụ :Đổi tên tập tin test1.txt trong /root thành test2.txt:
  | ^ hoặc 0 | Di chuyển con trỏ đến vị trí bắt đầu của dòng lệnh hiện tại |
  | $ | Di chuyển con trỏ đến vị trí kết thúc của dòng hiện tại. |
  | i,a | Chèn văn bản ngay trước/sau vị trí con trỏ |
+ | X | Xóa ký tự sau con chỏ |
+ | Dw | Xóa một từ ( bao gầm cả ký tự trống ngay sau nó ) |
+ | D | Xóa từ vị trí con trỏ đến cuối dòng |
+ | d^ | Xóa tư vị trí bắt đầu dòng đến vị trí ký tự trống hay ký tự bên trái con trỏ. |
+ | U | Hủy bỏ thay đổi trước đó |
+ | /pattern | Tìm xâu pattern. Theo hướng tiến |
+ | ?pattern | Tìm xâu pattern, theo hướng lùi về đầu văn bản. |
+ | 
+ 
  
  
  
