@@ -260,9 +260,39 @@ Ví Dụ :Đổi tên tập tin test1.txt trong /root thành test2.txt:
  
  ##### 12.2 : Time
  
+ Linux lưu trữ 1 vài thông tin liên quan đến thời gian như : thời gian điểm truy cập, thời gian chỉnh sửa và thời gian thay đổi file.
  
+ - Access Time ( thời điểm truy cập ): Lần cuối cùng file được đọc hoặc ghi vào.
+ - Modification Time ( Thời điểm chỉnh sửa ): Lần cuối nội dung file được chỉnh sửa.
+ -Change Time( Thời điểm thay đổi) : Lần cuối mà inode meta-data của file bị sửa.
  
+ Tương đương với các thông tin trên , ta dùng -atime, -mtime, -ctime, và cả "-" và "+" để lọc ra những thời gian trước hay sau thời gian đó.
  
+ Để tìm các file được chỉnh sửa trong một ngày trước :
+ 
+ ` find / -mtime 1`
+ 
+ Tìm các file được truy cập trong ngày hôn qua :
+ 
+ `find / ctime -1`
+ 
+ Các file mà meta-data bị chỉnh sửa lần cuối là trong 3 ngày trước và hơn :
+ 
+ ` find /-ctime +3`
+ 
+ Hoặc tìm theo phút chứ không phải theo ngày :
+ 
+ `find / mmin-1`
+ 
+ Lệnh trên sẽ tìm các file được chỉnh sửa trong vòng 1 phút trước.
+ 
+ Lệnh find còn có thể so sánh với 1 file, và trả về những file mới hơn :
+ 
+ `find / -newer myfile`
+ 
+##### 12.3 Tìm theo Owner và Permission
+
+
  
 
 
