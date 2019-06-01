@@ -232,7 +232,7 @@ Ví Dụ :Đổi tên tập tin test1.txt trong /root thành test2.txt:
  
  ` Chú ý : Có thể dùng ký hiệu "*" để thực hiện xóa, tìm kiếm, sao chép... nhiều tập tin cùng một lúc.`
  
- ## 12.Tìm theo thời gian  và size 
+ ##### 12.0 Tìm theo thời gian  và size 
  
  Find có thêm cả phần lọc kết quả theo thời gian và size nữa.
  
