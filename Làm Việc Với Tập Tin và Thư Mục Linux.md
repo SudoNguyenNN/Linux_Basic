@@ -23,7 +23,7 @@ Lệnh `ls -l` của "/" cho kết quả nhiều thộng tin, nếu muốn lọc
 
 **Ví Dụ** . Muốn xem trong "/" có tập tin . thư mục nào có chứa ký tự là student thì thực hiện lệnh sau :
 
-`ls -l |grep student
+`ls -l | grep student`
 
 ##### Lệnh grep còn còn được dùng để tìm kiếm chuối  trong file :
 
