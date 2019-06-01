@@ -192,7 +192,40 @@ Ví Dụ :Đổi tên tập tin test1.txt trong /root thành test2.txt:
  | U | Hủy bỏ thay đổi trước đó |
  | /pattern | Tìm xâu pattern. Theo hướng tiến |
  | ?pattern | Tìm xâu pattern, theo hướng lùi về đầu văn bản. |
- | 
+ | n,N | Lặp lại việc tìm kiếm theo cùng hướng / ngược hướng |
+ | p,P | Dán đoạn văn bản vừa vào trước / sau con trỏ . |
+ | . | Lặp lại câu lệnh  cuối |
+ | Dd | Xóa dòng con trỏ đang chạy |
+ | :w | Ghi lại tất cả các thay đổi của file hiện tại và tiếp tục soạn thảo |
+ | :q! | Kết thúc, không lưu trữ bất kỳ thay đổi nào |
+ | :ZZ | Lưu thay đổi của file hiện tại và kết thúc . |
+ 
+ ## 10. Tạo tập tin có nội dung :
+ 
+ ` echo " noi dung " >[ đường dẫn ]`
+ 
+ Ghi vào dòng tiếp theo của tập tin có nội dung :
+ 
+ ` echo " noi dung tiep theo " >>[ đường dẫn]`
+ 
+ ## 11. Xem tập tin 
+ 
+ Chúng ta sử dụng các lệnh để xam tệp tin :
+ 
+ | Lệnh | Chức Năng |
+ | -------- | -----------|
+ | cat | Dùng để xem các tệp không quá dài . |
+ | tac | Dùng để xem nội dung của một tập tin ngược bắt đầu từ dòng cuối. |
+ | tess | Dùng để xem tệp lớn hơn vì đây là chương trình phân trang. |
+ | tail |  Dùng để in 10 dòng cuối của tệp theo măc định . Chúng ta có thể thay đổi số dòng bằng cách thêm vào -n sau tail, n là số dòng bạn muốn. |
+ | head | Dùng để in 10 dòng đầu cảu tệp theo mạc định.Chúng ta có thể thay đổi số dòng bằng cách thêm -n vào sau head, n là số dòng bạn muốn. |
+ 
+ ## 12. Lệnh tìm kiếm 
+ 
+ ` find [ đường dẫn] -name [ tên cần tìm]`
+ 
+ Ví Dụ : Tìm vị trí của tập tin xyz.txt trong /ect:
+ 
  
  
  
