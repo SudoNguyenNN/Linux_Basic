@@ -226,6 +226,39 @@ Ví Dụ :Đổi tên tập tin test1.txt trong /root thành test2.txt:
  
  Ví Dụ : Tìm vị trí của tập tin xyz.txt trong /ect:
  
+ ` find / etc / -name xyz.txt`
+ 
+ Ngoài việc tìm theo tên (-name ), có thể tìm theo các tùy chọn khác như : -type , user, -atime, newer,... Sử dụng lệnh man find để tìm kiếm chi tiết.
+ 
+ ` Chú ý : Có thể dùng ký hiệu "*" để thực hiện xóa, tìm kiếm, sao chép... nhiều tập tin cùng một lúc.`
+ 
+ ## 12.Tìm theo thời gian  và size 
+ 
+ Find có thêm cả phần lọc kết quả theo thời gian và size nữa.
+ 
+ ##### 12.1 Size
+ 
+ Ta có thể tìm những file có dung lượng tùy ý, bằng cách dùng  -size. Một số option thường dùng:
+ 
+ - c : bytes
+ - k : kilobytes
+ - m : megabytes
+ - g : gigabytes
+ - b : 512-byte blocks
+ 
+ Tìm tất cả các file nặng đúng 100 bytes:
+ 
+ ` find / -size 100c`
+ 
+ Tìm tất cả các file nhỏ hơn 100 bytes:
+ 
+ `find / -size -100c`
+ 
+ Hoặc tìm các file nặng hơn 1 GB:
+ 
+ ` find / -size +1G`
+ 
+ ##### 12.2 : Time
  
  
  
