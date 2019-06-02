@@ -390,6 +390,6 @@ Lệnh `whereis` rất hữu ích để tìm kiếm các trang nhị phân, ngu�
 
 ## 16 Lệnh type 
 
-Lệnh `type` trong Linux được sử dụng để tìm hiểu một câu lệnh mà chúng ta sẽ diễn giải là một lệnh thích hợp, lệnh bên ngoài hoặc bí danh (alias) của shell hiện tại. Cú pháp cảu lệnh này là :
+Lệnh `type` trong Linux được sử dụng để tìm hiểu một câu lệnh mà chúng ta sẽ diễn giải là một lệnh thích hợp, lệnh bên ngoài hoặc bí danh (alias) của shell hiện tại. Cú pháp của lệnh này là :
 
 `type [tùy chọn] [command]`
