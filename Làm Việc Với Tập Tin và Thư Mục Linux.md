@@ -78,10 +78,10 @@ Lệnh `cd` dùng để đổi sang thư mục khác.
   
   Ví Dụ : Xóa tập tin abc.txt trong /usr/passwod:
   
-  `rm /usr/password/abc.txt
+  `rm /usr/password/abc.txt`
   
   ##### 5.2 Xóa tập tin mà không cần hỏi:
-  rm -f [ đường dẫn]
+  `rm -f [ đường dẫn]`
   
   Ví Dụ : Xóa tập tin abc.txt trong /usr
   
@@ -89,7 +89,7 @@ Lệnh `cd` dùng để đổi sang thư mục khác.
   
   ##### 5.3 Xóa thư mục
   
- rm -rf [đường dẫn]
+ `rm -rf [đường dẫn]`
  
  Ví Dụ : Xóa thư mục example trong /usr/bin:
  
