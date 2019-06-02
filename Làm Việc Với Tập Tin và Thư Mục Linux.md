@@ -114,7 +114,7 @@ Ví dụ : Sao chép thư mục abc.txt trong thư mục /root sang /usr:
 
 ##### 6.2 Lệnh sao chép thư mục
 
-`cp -r [đường dẫn nguồn] [đường dẫn đich]
+`cp -r [đường dẫn nguồn] [đường dẫn đich]`
 
 Ví dụ :Sao chép thư mục /root/networks sang /usr/bin:
 
