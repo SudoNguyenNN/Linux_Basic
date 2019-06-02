@@ -348,4 +348,48 @@ Ví Dụ 2: Giải nén tập tin test.txt.gz trong thư mục /usr/bin:
 
 ## 14. Lệnh locate
 
+Leenhjn` locate` giúp chúng ta tìm kiếm rất nhanh một file bất kỳ trên hệ thống Linux. Chúng ta có cú pháp sau :
 
+` loacte [tùy chọn] [name-file]`
+
+Chương trình ` locate` có tên gọi là `mlocate`
+
+Cú pháp cài đặt chương trình `locate` như sau:
+
+- Đối với CentOS/RHEL
+
+`yum -install -y mlocate`
+
+- Đối với Debian/Ubuntu
+
+`apt-get install -y mlocate`
+
+Để cập nhật lại dữ liệu cho `locate` chúng ta chạy lệnh sau : `updatedb`.
+
+## 15. Lệnh which và lệnh whereis
+
+##### 15.1 Lệnh which
+
+Lệnh ` which` xác định vị trí một chương trình trong đường dẫn của người dùng.
+
+Một số cú pháp của lệnh `which`:
+
+Tìm kiếm biến trong mội trường PATH và hiển thị vị trí của bất kỳ tệp thực thi phù hợp nào.
+
+`which [executable]`
+
+Nếu có nhiều tệp thực thi khớp,hiển thị tất cả:
+
+` which -a [executable]`
+
+##### 15.2 Lệnh whereis
+
+Lệnh `whereis` rất hữu ích để tìm kiếm các trang nhị phân, nguồn các lệnh trong hệ thống Linux. Cú pháp như sau:
+
+`whereis [tuyd chọn] [command]`
+
+## 16 Lệnh type 
+
+Lệnh `type` trong Linux được sử dụng để tìm hiểu một câu lệnh mà chúng ta sẽ diễn giải là một lệnh thích hợp, lệnh bên ngoài hoặc bí danh (alias) của shell hiện tại. Cú pháp cảu lệnh này là :
+
+`type [tùy chọn] [command]`
