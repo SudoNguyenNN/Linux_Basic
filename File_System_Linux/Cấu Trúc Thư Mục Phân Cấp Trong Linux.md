@@ -26,23 +26,23 @@
 - Chứa các tập tin thiết bị. Nó chứa các tập tin thiết bị đầu cuối như là USB hoặc bất kỳ thiết bị nào gắn với hệ thống.
 - Vd: /dev/sda, dev/usbmom0,...
 
-###### 6. /proc - Thông tin tiến trình
+##### 6. /proc - Thông tin tiến trình
 
 - Chứa các thông tin về tiến trình của hệ thống.
 - Các tập tin tạ đây chứa thông tin về các tiến trình đang chạy.
 - Đây là các tập tin hệ thống ảo với nội dung tài nguyên hệ thống.
 
-####### 7. /var - Các tập tin biến đổi
+##### 7. /var - Các tập tin biến đổi
 
 - Chứa các tập tin mà dung lượng lớn dần theo thời gian sử dụng.
 - Bao gồm các tập tin ghi chú về hệ thống(/var/log); các gói tin cơ sở dữ liệu(/var/lib); thư điện tử(/var/mail); hàng in queues(/var/spool); các tập tin khóa(/var/lọck); các tập tin được tạm dừng khi khởi động lại(/var/tmp);
 
-######## 8./tmp - Thư mục chứa các tập tin tạm
+##### 8./tmp - Thư mục chứa các tập tin tạm
 
 - Thư mục chứa các tập tin tạm được tạo bởi hệ thống và người dùng.
 - Các tập tin trong thư mục này bị xóa khi khởi động lại hệ thống.
 
-######### 9. /user - Các chương trình của người dùng
+##### 9. /user - Các chương trình của người dùng
 
 - Chứa các tập tin thức thi, thư viện, tài liệu và các mã nguồn cho các chương trình mức độ thứ hai.
 
