@@ -58,4 +58,27 @@ Cú Pháp
 
 Ví Dụ: `$ man -a intro`
 
+**5. -k Option: Tùy chọn này tìm kiếm lệnh đã cho dưới dạng biểu thức chính quy trong tất cả các hướng dẫn và nó trả về các trong thủ công với số phần được tìm thấy.
+
+Cú Pháp
+
+`$ man -k [Commanl name]`
+
+Ví Dụ: `$ man -k cd`
+
+**6. -w Option :** Tùy chọn này trả về vị trí có trang thủ công của lệnh đã cho.
+
+Cú Pháp
+
+`$ man -w [Commal name]`
+
+Ví Dụ: `$ man -w ls`
+
+**7. -I Option :** Nó coi lệnh là phân biệt chữ hoa chữ thường.
+
+Cú Pháp
+
+`$ man - I [Commal name]`
+
+Ví Dụ: `$ man -I printf`
 
