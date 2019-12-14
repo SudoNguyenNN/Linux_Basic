@@ -1,3 +1,9 @@
+** Hệ thống tập tin của Linux và Unix được tổ chức theo một hệ thống phân bậc tương tự như cấu trúc của một cây phân cấp. Bậc cao nhất của hệ thống tập tin là thư mục gốc được ký hiệu bằng / (root directory)
+
+Cây thư mục phân cấp :
+
+<img src="https://st.quantrimang.com/photos/image/2016/05/07/cau-truc-file-linux.png">
+
 # 1. Root - Thư Mục Gốc
 
 - Mỗi tập tin đơn và thư mục được bắt đầu từ thư mục gốc.
@@ -44,7 +50,15 @@
 
 ##### 9. /user - Các chương trình của người dùng
 
-- Chứa các tập tin thức thi, thư viện, tài liệu và các mã nguồn cho các chương trình mức độ thứ hai.
+-Chứa các ứng dụng thư viện, tài liệu và các mã nguồn các chương trình thứ cấp
+
+##### 10. /home - thư mục home
+
+-Thư mục chính lưu trữ các tập tin cá nhân của tất cả các user
+
+##### 11. /boot - Boot Loader Files
+
+- Chứa các tập tin cấu hình cho quá trình 
 
 
 
