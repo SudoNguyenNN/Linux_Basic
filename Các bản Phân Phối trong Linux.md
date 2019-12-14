@@ -7,7 +7,7 @@ Các bản phân phối cảu linux đều có trang một trang chủ chính th
 - Truy cập trang : https://www.centos.org/download/ để tải bản phân phối CentOS của Linux
 - Truy cập trang : https://ubuntu.com/#download/ để tải bản phân phối Ubuntu Desktop
 
-## 2. Hướng dẫn cài đặt Centos 7
+## 2. Hướng dẫn cài đặt cho Centos 7
 
 Trước tiên bạn cần có file ISO của CentOS và Phần mềm VMware Workstation
 
@@ -71,4 +71,12 @@ Chờ cho cho máy chạy xong
 
 <img src="https://i.imgur.com/JSau8SD.png">
 
+Chọn Reboot  khởi động lại CentOS để hoàn thành quá trình cài đặt
 
+<img src="https://i.imgur.com/4bVylLV.png">
+
+Giao diện của CentOS
+
+<img src="https://i.imgur.com/Qkdp8de.png">
+
+Chúc Các bạn thành công!
