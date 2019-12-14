@@ -1,11 +1,10 @@
-# Bản Phân Phối Linux : CentOS, Ubuntu
+# Bản Phân Phối Linux : CentOS
 
 ## 1. Install Các Bản Phân Phối Của Linux
 
 Các bản phân phối cảu linux đều có trang một trang chủ chính thức nên vào các trang này để tải các bản phân phối của Linux
 
 - Truy cập trang : https://www.centos.org/download/ để tải bản phân phối CentOS của Linux
-- Truy cập trang : https://ubuntu.com/#download/ để tải bản phân phối Ubuntu Desktop
 
 ## 2. Hướng dẫn cài đặt cho Centos 7
 
