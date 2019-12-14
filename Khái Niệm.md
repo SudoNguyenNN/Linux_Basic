@@ -9,4 +9,4 @@
 - **=>** Và tất cả đều có một đặc điểm chung là có một *Linux kernel* bên trong. Linux thu hút các lập trình viên bởi tính linh hoạt, sức mạnh, tốc độ và phần mềm quản lý package cho phép cài đặt phần mềm một cách dễ dàng.
    
    
-[linux là gì](https://github.com/utnguyen153s2/Linux_Basiss/master/Kh%C3%A1i%20Ni%E1%BB%87m.md)
+[linux là gì](https://github.com/utnguyen153s2/Linux_Basiss/blob/master/Kh%C3%A1i%20Ni%E1%BB%87m.md)
