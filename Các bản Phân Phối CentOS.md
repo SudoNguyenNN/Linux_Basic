@@ -1,6 +1,6 @@
 # Bản Phân Phối Linux : CentOS
 
-## 1. Install Các Bản Phân Phối Của Linux
+## 1. Install Bản Phân Phối CentOS Của Linux
 
 Các bản phân phối cảu linux đều có trang một trang chủ chính thức nên vào các trang này để tải các bản phân phối của Linux
 
