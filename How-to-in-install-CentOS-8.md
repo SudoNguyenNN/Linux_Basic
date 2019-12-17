@@ -48,7 +48,13 @@ Chờ cho máy chạy
 
 <img src="https://i.imgur.com/5lO1R4d.png">
 
+Chọn ngôn ngữ và nhấn Continue
 
+<img src="https://i.imgur.com/rnVi6aP.png">
+
+Chọn ổ cứng 
+
+<img src="">
 
 
 
