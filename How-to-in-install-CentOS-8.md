@@ -76,7 +76,29 @@ Chọn  Finish Configuration để hoàn tất quá trình cái đặt
 
 <img src="https://i.imgur.com/RU2rvty.png">
 
+Nhấn Reboot để hoàn thành
 
+<img src="https://i.imgur.com/u2QtT5b.png">
+
+Sau khi Reboot  thì có thể tạo thêm các user mới
+
+<img src="https://i.imgur.com/2e4G4qj.png">
+
+<img src="https://i.imgur.com/z4lu1Zl.png">
+
+Nhấn vào License để chấp nhận điều khoản => nhấn Done để hoàn thành
+
+<img src="https://i.imgur.com/ARK4Co7.png">
+
+Sau đó nhân Finish để hoàn thành
+
+<img src="https://i.imgur.com/K4pG02a.png">
+
+Đây là giao diện của CenOS 8
+
+<img src="https://i.imgur.com/ce6sg4t.png">
+
+Chúc thành công!
 
 
 
