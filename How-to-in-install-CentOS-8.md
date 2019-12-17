@@ -96,7 +96,7 @@ Sau đó nhân Finish để hoàn thành
 
 Đây là giao diện của CenOS 8
 
-<img src="https://i.imgur.com/ce6sg4t.png">
+<img src="https://i.imgur.com/ibPBMUe.png">
 
 Chúc thành công!
 
