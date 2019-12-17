@@ -54,7 +54,31 @@ Chọn ngôn ngữ và nhấn Continue
 
 Chọn ổ cứng 
 
-<img src="">
+<img src="https://i.imgur.com/nRh2MR3.png">
+
+Chọn ổ cứng bạn muốn cài HĐH và nhấn Done để tiếp tục
+
+<img src="https://i.imgur.com/l8QR6G6.png">
+
+Chọn Begin Installation 
+
+<img src="https://i.imgur.com/ZJY5maK.png">
+
+Đặt mật khẩu cho máy
+
+<img src="https://i.imgur.com/pZTsWgY.png">
+
+Nhấn Done để hoàn tất cài mật khẩu
+
+<img src="https://i.imgur.com/1tjmmpP.png">
+
+Chọn  Finish Configuration để hoàn tất quá trình cái đặt
+
+<img src="https://i.imgur.com/RU2rvty.png">
+
+
+
+
 
 
 
