@@ -20,5 +20,13 @@ Lệnh kill thường được sử dụng để ngừng thi hành một tiến 
 
 Khi một child process bị kill, parent process sẽ  được thông báo thông qua ký hiệu SIGCHILD. Sau đó parent process sẽ thực hiện một vài công việc khác hoặc bắt đâu lại child process nếu cần thiết.
 
-Khi Parent process bị kill trước. Thì tất cả các process trong parent process
+Khi Parent process bị kill trước. Thì Parent process cảu tất cả các process "init process" trở thành PPID mới, đôi khi còn được gọi là Orphan Process
+
+Khi một process bị kill, danh sách liệt kê ps có thể vẫn chỉ process với trạng thái Z (Zombie). Là trạng thái process không tồn tại. Process này bị kill và không được sử dụng. 
+
+Những process này khác với orphan process. Nó là những process mà đã chạy hoàn thành nhưng vẫn có một cổng vào trong bảng process.
+
+### Deamon Process
+
+
 
