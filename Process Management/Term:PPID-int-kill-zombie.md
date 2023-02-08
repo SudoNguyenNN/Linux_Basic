@@ -28,5 +28,11 @@ Những process này khác với orphan process. Nó là những process mà đ�
 
 ### Deamon Process
 
+### 2. Deamon Process
 
+Deamon là các backgroud process liên quan tới hệ thống mà thường chạy với quyền hạn truy cập của **root**  và các dịch vụ yêu cầu từ process khác.
+
+Deamon không có terminal điều khiển.
+
+Deamon chỉ là một process mà chạy trong backgroud, thường nó đợi cho cái gì đó sảy ra và có khả năng làm việc với cái đó. Giống như máy in Deamon máy in đợi các lệnh in.
 
