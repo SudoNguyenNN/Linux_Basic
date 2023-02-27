@@ -1,0 +1,3 @@
+- Tải Folder từ Local lên Server Ubuntu
+- Convert file sang OpenSSH
+- Tải Folder từ Server Ubuntu về Local
