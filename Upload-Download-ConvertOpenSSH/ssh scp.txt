@@ -1,0 +1,16 @@
+Example: 
+ssh-keygen -i -f path/to/ssh2_publickey.pub >> path/to/opensshpublickey.pub
+
+Upload file lên server
+
+scp -r D:\NguyenNN\03.Work\HostKeys nguyennn@10.0.10.128:\home\nguyennn
+
+Convert sang Open SSH
+
+ssh-keygen -i -f /home/nguyennn/HostKeys/21.pub >> /home/nguyennn/SSH/21.pub
+
+Download File từ server về Local
+
+scp -r nguyennn@10.0.10.128:/home/nguyennn /D:\NguyenNN\03.Work\Openssh
+
+
