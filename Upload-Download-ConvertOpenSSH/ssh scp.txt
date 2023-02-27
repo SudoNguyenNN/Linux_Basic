@@ -1,15 +1,20 @@
+Run in CMD
+ssh nguyennn@10.0.10.128 
+
+
+
 Example: 
 ssh-keygen -i -f path/to/ssh2_publickey.pub >> path/to/opensshpublickey.pub
 
-Upload file lên server
+Upload file lên server (Run CMD)
 
 scp -r D:\NguyenNN\03.Work\HostKeys nguyennn@10.0.10.128:\home\nguyennn
 
-Convert sang Open SSH
+Convert sang Open SSH (Run Linux)
 
 ssh-keygen -i -f /home/nguyennn/HostKeys/21.pub >> /home/nguyennn/SSH/21.pub
 
-Download File từ server về Local
+Download File từ server về Local (Run CMD)
 
 scp -r nguyennn@10.0.10.128:/home/nguyennn /D:\NguyenNN\03.Work\Openssh
 
