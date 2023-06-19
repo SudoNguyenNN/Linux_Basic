@@ -20,4 +20,6 @@ Mount phân vùng
 
 ![image](https://github.com/SudoNguyenNN/Linux_Basic/assets/50360416/16bd9f43-5d95-4ab5-ae29-8fbff59bb716)
 
+Dể tránh mất phân vùng mount ta phải ghi vào file fstab
 
+![image](https://github.com/SudoNguyenNN/Linux_Basic/assets/50360416/30369ac7-17d3-4904-b69d-e69a25598c5a)
