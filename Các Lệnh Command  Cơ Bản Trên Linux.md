@@ -111,7 +111,22 @@ chmod octal file : Thay đổi quyền sử dụng của tập tin file thành o
  - 1 : thực thi (x)
  - (t) : biểu thị cho sticky bit: chỉ có chủ sở hữu mới có quyền xóa file hoặc thư mục này , còn các user khác cho dùng có quyền ( w ) nhưng không xóa được. VD: chmod 1775 (namefile or namefolder)
  - (s): áp quyền cho các thư mục thừa hưởng từ thư mục cha bên ngoài. VD: chmod 2775 (namefile or namefolder) , chmod g+s (namefile or namefolder)
- 
+
+Bổ xung thêm quyền cho file hoặc thư mục:
+
+chattr -i (namefile or namefolder) : bổ xung thêm quền không thể xóa , thay đổi file kể cả dùng user root và rm -rf
+
+Check file có tham số trên không sử dụng : 
+
+lsattr (namefile or namefolder)
+
+nguyennn@devops01:~/attr$ lsattr file44
+--------------e------- file44
+
+nguyennn@devops01:~/attr$ lsattr file44
+----i---------e------- file44
+
+
 Ví dụ : 
 
 -rwxr-sr-x 1 nguyennn nguyennn 0 Feb  4 08:45 test123.txt ( ví dụ cho lựa chọn (-s) )
