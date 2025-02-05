@@ -110,7 +110,7 @@ chmod octal file : Thay đổi quyền sử dụng của tập tin file thành o
  - 2 : ghi (w)
  - 1 : thực thi (x)
  - (t) : biểu thị cho sticky bit: chỉ có chủ sở hữu mới có quyền xóa file hoặc thư mục này , còn các user khác cho dùng có quyền ( w ) nhưng không xóa được. VD: chmod 1775 (namefile or namefolder)
- - (s): áp quyền cho các thư mục thừa hưởng từ thư mục cha bên ngoài. VD: chmod 2775 (namefile or namefolder)
+ - (s): áp quyền cho các thư mục thừa hưởng từ thư mục cha bên ngoài. VD: chmod 2775 (namefile or namefolder) , chmod g+s (namefile or namefolder)
  
 Ví dụ : 
 
