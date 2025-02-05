@@ -109,11 +109,14 @@ chmod octal file : Thay đổi quyền sử dụng của tập tin file thành o
  - 4 : đọc (r)
  - 2 : ghi (w)
  - 1 : thực thi (x)
- - (t) : biểu thị cho sticky bit: chỉ có chủ sở hữu mới có quyền xóa file hoặc thư mục này , còn các user khác cho dùng có quyền ( w ) nhưng không xóa được.
+ - (t) : biểu thị cho sticky bit: chỉ có chủ sở hữu mới có quyền xóa file hoặc thư mục này , còn các user khác cho dùng có quyền ( w ) nhưng không xóa được. VD: chmod 1775 (namefile or namefolder)
+ - (s): áp quyền cho các thư mục thừa hưởng từ thư mục cha bên ngoài. VD: chmod 2775 (namefile or namefolder)
  
 Ví dụ : 
 
--rwxr-xr-t 1 nguyennn nguyennn        0 Feb  4 08:45  test123.txt*
+-rwxr-sr-x 1 nguyennn nguyennn 0 Feb  4 08:45 test123.txt ( ví dụ cho lựa chọn (-s) )
+
+-rwxr-xr-t 1 nguyennn nguyennn        0 Feb  4 08:45  test123.txt ( ví dụ cho lựa chọn (-t) )
 
 chmod 777 : tất cả đều có đủ 3 quyền
 
