@@ -109,8 +109,11 @@ chmod octal file : Thay đổi quyền sử dụng của tập tin file thành o
  - 4 : đọc (r)
  - 2 : ghi (w)
  - 1 : thực thi (x)
+ - (t) : biểu thị cho sticky bit: chỉ có chủ sở hữu mới có quyền xóa file hoặc thư mục này , còn các user khác cho dùng có quyền ( w ) nhưng không xóa được.
  
 Ví dụ : 
+
+-rwxr-xr-t 1 nguyennn nguyennn        0 Feb  4 08:45  test123.txt*
 
 chmod 777 : tất cả đều có đủ 3 quyền
 
