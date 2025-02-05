@@ -183,6 +183,9 @@ grep -r pattern dir : Tìm mẫu lặp pattern trong các thư mục dir và t�
 
 command | grep pattern : Tìm mẫu lặp pattern trong dầu ra của lệnh command
 
+find (nội dung tìm kiếm) folder
+
+
 ## 10. Phím Tắt 
 
 ctrl+c : dừng hoàn toàn lệnh đang chạy
@@ -201,8 +204,9 @@ ctrl+r : hiện danh sách các lệnh gần đây
 
 exit : thoát khỏi phiên bản làm việc hiện tại
 
-*: phải cựu kỳ cẩn trọng khi dùng.
 
 ## 11.Kích hoạt tài khoản root trong Linux
 
-sudo -i :để đăng nhập vào root 
+sudo -i :để đăng nhập vào root  với tài khoản hiện thời có quyền sudo
+
+su - : đăng nhập vào root với tài khoản và password của root
