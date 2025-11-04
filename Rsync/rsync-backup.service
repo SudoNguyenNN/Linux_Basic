@@ -1,0 +1,17 @@
+[Unit]
+Description=Rsync Backup Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/nguyennn/rsync.sh
+User=nguyennn
+Restart=on-failure
+# Ghi log ra journalctl
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+
